@@ -12,7 +12,7 @@ const setNewSchool = (schoolName, value) => {
   client.SET(schoolName, value, print);
 };
 
-const    = async (schoolName) => {
+const displaySchoolValue = async (schoolName) => {
   console.log(await promisify(client.GET).bind(client)(schoolName));
 };
 
